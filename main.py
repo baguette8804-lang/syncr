@@ -90,3 +90,4 @@ def get_users():
     users = db.query(UserTable).all()
     db.close()
     return {"users": [{"id": u.id, "name": u.name, "email": u.email} for u in users]}
+
